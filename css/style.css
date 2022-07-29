@@ -227,6 +227,7 @@ body {
   align-items: center;
   border-radius: 4px;
 }
+
 .advantage-icon {
   fill: currentColor;
 }
@@ -262,7 +263,9 @@ body {
 }
 .team-item {
   background-color: var(--secondary-title-color);
-  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title {
@@ -329,10 +332,12 @@ body {
 .clients-icon {
   fill: #afb1b8;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
@@ -349,7 +354,21 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-content {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
 
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 .contact {
   font-style: normal;
   line-height: 1.71;
@@ -369,6 +388,33 @@ body {
 .footer-item {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.footer-soc-link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-title-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-title-color);
+}
+
 /* ----------PORTFOLIO------------ */
 .filter-list {
   display: flex;
@@ -395,6 +441,8 @@ body {
 .filter-btn:focus {
   color: var(--secondary-title-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .works {
   padding-top: 94px;
@@ -427,4 +475,10 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+.works-item:hover,
+.works-item:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
